@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ami.monitor-recover",
+  "name": "Monitor Recover",
+  "version": "1.0.0",
+  "author": "ami",
+  "license": "MIT",
+  "description": "Re-applies native 4K resolution to external monitors after wake from sleep.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Monitor Recover",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
