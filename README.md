@@ -9,7 +9,7 @@ After s2idle resume, the USB-C dock's DisplayPort link retrains at reduced bandw
 ## Install
 
 ```sh
-omarchy plugin add https://github.com/ami/omarchy-monitor-recover.git --enable
+omarchy plugin add https://github.com/ihasidul/monitor-fix-for-omarchy.git --enable
 ```
 
 Or manually:
@@ -33,6 +33,19 @@ Click the monitor icon (󰍹) in the bar to trigger recovery. The icon changes t
 - **󰄮** — recovery failed or timed out
 
 The recovery process runs with a 180-second timeout, polling every few seconds and trying the highest refresh 4K mode available.
+
+## Structure
+
+- `BarWidget.qml` — the bar widget UI and status handling
+- `monitor-recover.sh` — the standalone recovery script, also runnable directly:
+
+  ```sh
+  ~/.config/omarchy/plugins/ami.monitor-recover/monitor-recover.sh
+  ```
+
+  Exit codes: `0` when all external monitors reach native 4K, `1` when no
+  Hyprland instance exists or the full-speed link never appears within the
+  timeout.
 
 ## Configuration
 
