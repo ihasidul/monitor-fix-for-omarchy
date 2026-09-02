@@ -15,7 +15,7 @@ omarchy plugin add https://github.com/ihasidul/monitor-fix-for-omarchy.git --ena
 Or manually:
 
 ```sh
-PLUGIN_ID="ami.monitor-recover"
+PLUGIN_ID="hasidul.monitor-recover"
 PLUGIN_DIR="$HOME/.config/omarchy/plugins/$PLUGIN_ID"
 mkdir -p "$PLUGIN_DIR"
 # copy files into $PLUGIN_DIR
@@ -40,7 +40,7 @@ The recovery process runs with a 180-second timeout, polling every few seconds a
 - `monitor-recover.sh` — the standalone recovery script, also runnable directly:
 
   ```sh
-  ~/.config/omarchy/plugins/ami.monitor-recover/monitor-recover.sh
+  ~/.config/omarchy/plugins/hasidul.monitor-recover/monitor-recover.sh
   ```
 
   Exit codes: `0` when all external monitors reach native 4K, `1` when no
@@ -56,7 +56,7 @@ Add to your `~/.config/omarchy/shell.json` bar layout:
   "bar": {
     "layout": {
       "right": [
-        { "id": "ami.monitor-recover" }
+        { "id": "hasidul.monitor-recover" }
       ]
     }
   }
@@ -66,5 +66,5 @@ Add to your `~/.config/omarchy/shell.json` bar layout:
 ## Remove
 
 ```sh
-omarchy plugin remove ami.monitor-recover
+omarchy plugin remove hasidul.monitor-recover
 ```

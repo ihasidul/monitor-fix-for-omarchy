@@ -11,7 +11,7 @@ import qs.Ui
 // it returns to native 3840x2160 or the timeout elapses.
 BarWidget {
   id: root
-  moduleName: "ami.monitor-recover"
+  moduleName: "hasidul.monitor-recover"
 
   readonly property int statusIdle: 0
   readonly property int statusRunning: 1
